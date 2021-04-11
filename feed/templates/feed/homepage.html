@@ -2,5 +2,8 @@
 {% block title %}HomePage{% endblock %}
 
 {% block content %}
-    <h1>Well this is the homepage</h1>
+    {% for post in posts %}
+        {{ post.text }}  written at {{ post.date }}
+        <br>
+    {% endfor %}
 {% endblock %}
