@@ -42,9 +42,11 @@ INSTALLED_APPS = [
 
     'feed',
     'profiles',
+
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'sorl.thumbnail',
 ]
 
 MIDDLEWARE = [
