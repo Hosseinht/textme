@@ -64,7 +64,9 @@
                 </svg>
                 </div>
                 <hr>
-                <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="w-full">
+                  <textarea class="w-full border-2 border-grey-500 my-5 js-post-text" placeholder="Enter your post" maxlength="340" rows="3" data-post-url="{% url 'feed:new_post' %}"></textarea>
+                </div>
                 <hr>
                 <div class="ml-auto">
                   <button class="flex content-center items-center mt-2 mr-5 p-3 bg-indigo-200 rounded-xl shadow-xs cursor-pointer hover:bg-indigo-500 hover:text-gray-100 js-submit" type="button">

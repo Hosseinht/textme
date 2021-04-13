@@ -5,8 +5,10 @@
 {% block title %}HomePage{% endblock %}
 
 {% block content %}
-    {% for post in posts %}
-        {% include "includes/post.html" with post=post show_detail_link=True %}
-        
-    {% endfor %}
+    <div id='posts-container'>
+        {% for post in posts %}
+             {% include "includes/post.html" with post=post show_detail_link=True %}
+        {% endfor %}
+    </div>
+    
 {% endblock %}
