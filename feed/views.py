@@ -11,7 +11,7 @@ class HomePage(ListView):
 
 class PostDetailView(DetailView):
     http_method_names = ['get']
-    template_name = 'feed/detail.htmls'
+    template_name = 'feed/detail.html'
     model = Post
     context_object_name = 'post'
     
