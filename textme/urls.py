@@ -20,10 +20,12 @@ from django.conf.urls.static import static
 from django.conf.urls import include, url
 
 from feed import urls as feed_urls
+from profiles import urls as profiles_url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(feed_urls, namespace="feed")),
+    path('', include(profiles_url, namespace="profile")),
     url('', include("allauth.urls"))
 ]
 
